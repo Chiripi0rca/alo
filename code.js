@@ -31,11 +31,17 @@
     const imagen7 = document.getElementById("imagen7");
     const imagen8 = document.getElementById("imagen8");
     const imagen9 = document.getElementById("imagen9");
-
+    const troll = document.getElementById("troll");
 
     audio.ontimeupdate = () => {
       const tiempo = audio.currentTime;
 
+       if (timepo >= 0 && tiempo < 1.55){
+        troll.classList.add("visible");
+      } else {
+        troll.classList.remove("visible");
+      }
+     
       if (tiempo >= 2 && tiempo < 4) {
         frase1.classList.add("visible");
         imagen1.classList.add("visible");
