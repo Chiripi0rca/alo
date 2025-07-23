@@ -36,12 +36,11 @@
     audio.ontimeupdate = () => {
       const tiempo = audio.currentTime;
 
-       if (timepo >= 0 && tiempo < 1.55){
+      if (tiempo >= 0 && tiempo < 1.55){
         troll.classList.add("visible");
       } else {
         troll.classList.remove("visible");
       }
-     
       if (tiempo >= 2 && tiempo < 4) {
         frase1.classList.add("visible");
         imagen1.classList.add("visible");
